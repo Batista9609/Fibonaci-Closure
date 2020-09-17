@@ -1,0 +1,18 @@
+def fib():
+    val1 = 0
+    val2 = 0
+    def fib():
+        nonlocal val1, val2
+        if val1 ==0 and val2 ==0:
+            n_1 = 1
+            return val1
+        else:
+            P = val1 + val2
+            val2 = val1
+            val1 = P
+            return P
+    return fib
+
+X = fib()
+for i in range(0,20):
+    print(X())
